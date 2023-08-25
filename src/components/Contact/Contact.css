@@ -34,3 +34,8 @@
     flex-direction: column;
     width: 20%;
 }
+
+.end {
+    text-align: center;
+    color: gray;
+}
