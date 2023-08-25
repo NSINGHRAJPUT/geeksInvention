@@ -39,3 +39,13 @@
     text-align: center;
     color: gray;
 }
+
+@media (max-width:760px) {
+    .contact {
+        text-align: center;
+    }
+
+    .contact .footer .address {
+        width: 95%;
+    }
+}
