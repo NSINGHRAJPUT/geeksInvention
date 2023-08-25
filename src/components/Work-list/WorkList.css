@@ -5,7 +5,8 @@
     background-color: rgb(5, 209, 209);
     color: #fff;
     flex-wrap: wrap;
-    height: 120vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .work-list {
@@ -15,10 +16,11 @@
     background-color: black;
     color: #fff;
     flex-wrap: wrap;
-    height: 100vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
-.image-container {
+.work-container {
     width: 40%;
     margin-bottom: 1rem;
     margin-right: 1rem;
@@ -30,7 +32,7 @@
     height: auto;
 }
 
-.description {
+.work-description {
     width: 40%;
     font-size: 1.25rem;
     flex-shrink: 1;
@@ -65,4 +67,20 @@
 .desc-link:hover {
     background: #fff;
     color: black;
+}
+
+@media (max-width:760px) {
+    .work {
+        flex-direction: column;
+    }
+
+    .work-container {
+        width: 75%;
+        margin: auto;
+    }
+
+    .work-description {
+        width: 95%;
+        margin: auto;
+    }
 }

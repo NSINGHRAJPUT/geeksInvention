@@ -1,4 +1,4 @@
-.image-description-container {
+.hero-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -14,15 +14,9 @@
     width: 40%;
     margin-bottom: 1rem;
     margin-right: 1rem;
-    flex-shrink: 1;
 }
 
-.image {
-    max-width: 100%;
-    height: auto;
-}
-
-.description {
+.hero-description {
     width: 40%;
     font-size: 1.25rem;
     flex-shrink: 1;
@@ -55,11 +49,20 @@
 }
 
 @media (max-width:760px) {
-    .image-description-container {
+    .hero-container {
         flex-direction: column-reverse;
-        width: 100%;
         display: flex;
-        justify-content: center;
-        align-items: center;
+    }
+
+    .hero-description {
+        width: 95%;
+    }
+
+    .image-container {
+        height: 95%;
+    }
+
+    .hero-image {
+        height: 250px;
     }
 }

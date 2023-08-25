@@ -2,8 +2,8 @@ import './Hero.css'
 
 const Hero = () => {
     return (
-        <div className="image-description-container">
-            <div className="description" data-aos="fade-up">
+        <div className="hero-container">
+            <div className="hero-description" data-aos="fade-up" data-aos-delay='300' data-aos-duration='600'>
                 <h1>Fintech Solution</h1>
                 <h3>Transforming Fintech with AI</h3>
                 <div className='desc-btn'>
@@ -23,6 +23,7 @@ const Hero = () => {
                 <img
                     src="https://geeksinvention.com/assets/v3/industry-fintech.svg"
                     alt="Description"
+                    className='hero-image'
                 />
             </div>
         </div>

@@ -49,3 +49,10 @@
 .company-card img {
     width: 240px;
 }
+
+
+@media (max-width:760px) {
+    .clients-desc {
+        width: 95%;
+    }
+}

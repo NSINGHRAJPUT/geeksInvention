@@ -3,14 +3,14 @@ import './WorkList.css'
 const WorkList2 = () => {
     return (
         <div className="work-list">
-            <div className="image-container">
+            <div className="work-container">
                 <img
                     src="https://geeksinvention.com/assets/v3/industry-education.webp"
                     alt="Description"
                     className="image"
                 />
             </div>
-            <div className="description" data-aos="fade-up" data-aos-delay='300' data-aos-duration='600'>
+            <div className="work-description" data-aos="fade-up" data-aos-delay='300' data-aos-duration='600'>
                 <h1>Smart Education</h1>
                 <h3>Elevate your Education Institution</h3>
                 <div className='desc-btn'>
