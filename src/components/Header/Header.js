@@ -1,11 +1,13 @@
-import Hero from "./Hero"
+
+import MainHero from "./MainHero";
 import Navbar from "./Navbar"
 
 const Header = () => {
     return (
         <>
             <Navbar />
-            <Hero />
+            <MainHero />
+
         </>
     )
 }

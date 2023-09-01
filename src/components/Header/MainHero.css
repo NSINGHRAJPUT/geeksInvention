@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+
+.mainhero {
+    background: rgba(0, 0, 0, 0.901);
+    color: #fff;
+    font-size: 2em;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Gruppo', sans-serif;
+}
+
+.g-back {
+    position: absolute;
+    z-index: -1;
+    color: #fff;
+}

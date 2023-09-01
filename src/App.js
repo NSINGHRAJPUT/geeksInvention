@@ -1,26 +1,33 @@
 
 import './App.css';
-import Clients from './components/Clients/Clients';
-import Contact from './components/Contact/Contact';
-import Header from './components/Header/Header';
-import Info from './components/Info/Info';
-import Platforms from './components/Platforms/Platforms';
-import Teams from './components/Teams/Teams';
-import WorkList1 from './components/Work-list/WorkList1';
-import WorkList2 from './components/Work-list/Worklist2';
+import React, { lazy, Suspense } from 'react';
+import Fallback from './components/FallBack/Fallback';
+const Clients = lazy(() => import('./components/Clients/Clients'));
+const Contact = lazy(() => import('./components/Contact/Contact'));
+const Hero = lazy(() => import('./components/Header/Hero'));
+const Info = lazy(() => import('./components/Info/Info'));
+const Platforms = lazy(() => import('./components/Platforms/Platforms'));
+const Teams = lazy(() => import('./components/Teams/Teams'));
+const WorkList1 = lazy(() => import('./components/Work-list/WorkList1'));
+const WorkList2 = lazy(() => import('./components/Work-list/Worklist2'));
+const Header = lazy(() => import('./components/Header/Header'));
 
 function App() {
   return (
-    <div>
-      <Header />
-      <WorkList1 />
-      <WorkList2 />
-      <Info />
-      <Clients />
-      <Platforms />
-      <Teams />
-      <Contact />
-    </div>
+    <>
+      <Suspense fallback=
+        {<Fallback />}>
+        <Header />
+        <Hero />
+        <WorkList1 />
+        <WorkList2 />
+        <Info />
+        <Clients />
+        <Platforms />
+        <Teams />
+        <Contact />
+      </Suspense>
+    </>
   );
 }
 

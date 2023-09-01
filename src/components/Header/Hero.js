@@ -19,11 +19,11 @@ const Hero = () => {
                     <h3>See full case study</h3>
                 </button>
             </div>
-            <div className="image-container">
+            <div className="hero-image">
                 <img
                     src="https://geeksinvention.com/assets/v3/industry-fintech.svg"
                     alt="Description"
-                    className='hero-image'
+                    className='image'
                 />
             </div>
         </div>
